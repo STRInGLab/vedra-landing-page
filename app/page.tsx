@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { MobileNav } from "@/components/navigation/MobileNav";
 import { CallToActionSection } from "@/components/sections/CallToActionSection";
 import { FAQSection } from "@/components/sections/FAQSection";
 import { FooterSection } from "@/components/sections/FooterSection";
@@ -20,36 +21,30 @@ const navItems = [
 export default function HomePage() {
   return (
     <div className="bg-white w-full relative">
-      <header className="w-full h-20 flex items-center justify-between px-[360px] py-0 bg-transparent backdrop-blur-md shadow-[0px_0.4px_16.17px_#00000014,0px_0.61px_10.11px_#2c2c2c0f,0px_4.04px_4.04px_#2c2c2c03] fixed top-0 left-0 right-0 z-50">
-        <div className="relative w-[115.0px] h-[38.84px]">
-          <img src="/figmaAssets/vedra-logo-white-1-1.png" alt="Vedra Logo" className="w-full h-full object-cover object-[50%_50%]" />
+      <header className="w-full h-16 md:h-20 flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-60 py-0 bg-transparent backdrop-blur-md shadow-[0px_0.4px_16.17px_#00000014,0px_0.61px_10.11px_#2c2c2c0f,0px_4.04px_4.04px_#2c2c2c03] fixed top-0 left-0 right-0 z-50">
+        <div className="relative w-24 md:w-[115px] h-8 md:h-[38.84px]">
+          <img src="/figmaAssets/vedra-logo-white-1-1.png" alt="Vedra Logo" className="w-full h-full object-contain" />
         </div>
 
-        <nav className="flex w-[542px] h-[46px] items-center justify-between relative">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           {navItems.map((item, index) => (
-            <div
+            <a
               key={index}
-              className="flex flex-col items-center justify-center px-2.5 py-0 relative cursor-pointer"
-              style={{
-                width: item.label === "How It Works" ? "110px" : "90px",
-                height: "28px",
-              }}
+              href="#"
+              className="[font-family:'Instrument_Sans',Helvetica] font-normal text-white text-sm lg:text-base hover:text-[#3e96ff] transition-colors cursor-pointer"
             >
-              <div className="relative flex items-center justify-center w-fit [font-family:'Instrument_Sans',Helvetica] font-normal text-white text-base tracking-[0] leading-[normal]">
-                {item.label}
-              </div>
-            </div>
+              {item.label}
+            </a>
           ))}
         </nav>
 
-        <div className="inline-flex items-center justify-center gap-8 relative flex-[0_0_auto]">
-          <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
-            <Button className="h-auto px-8 py-4 bg-[#3e96ff] rounded-[1000px] hover:bg-[#3e96ff]/90">
-              <span className="[font-family:'Instrument_Sans',Helvetica] font-normal text-white text-base text-center tracking-[-0.24px] leading-[normal]">
-                Start free trial
-              </span>
-            </Button>
-          </div>
+        <div className="flex items-center gap-4">
+          <Button className="hidden md:inline-flex h-auto px-6 lg:px-8 py-3 lg:py-4 bg-[#3e96ff] rounded-full hover:bg-[#3e96ff]/90">
+            <span className="[font-family:'Instrument_Sans',Helvetica] font-normal text-white text-sm lg:text-base text-center tracking-[-0.24px] leading-[normal]">
+              Start free trial
+            </span>
+          </Button>
+          <MobileNav />
         </div>
       </header>
 
@@ -58,28 +53,28 @@ export default function HomePage() {
           <MainContentSection />
         </section>
 
-        <section className="relative w-full bg-white pt-[400px] pb-20">
-          <div className="absolute top-[-400px] left-1/2 -translate-x-1/2 z-10">
-            <div className="relative w-[1066px] h-[795px]">
-              <div className="relative h-full overflow-hidden rounded-3xl shadow-2xl bg-white">
-                <div className="absolute top-6 left-[54px] w-[115px] h-10 bg-white" />
+        <section className="relative w-full bg-white pt-[150px] sm:pt-[250px] md:pt-[350px] lg:pt-[400px] pb-12 sm:pb-16 md:pb-20 px-4">
+          <div className="absolute top-[-100px] sm:top-[-200px] md:top-[-300px] lg:top-[-400px] left-1/2 -translate-x-1/2 z-10 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[1066px] max-w-full">
+            <div className="relative w-full aspect-[4/3] sm:aspect-[16/12] md:aspect-[1066/795]">
+              <div className="relative h-full overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl bg-white">
+                <div className="absolute top-3 sm:top-4 md:top-6 left-6 sm:left-8 md:left-[54px] w-16 sm:w-20 md:w-[115px] h-6 sm:h-8 md:h-10 bg-white" />
 
-                <div className="absolute top-[27px] left-[60px] w-[100px] h-[34px]">
-                  <img src="/figmaAssets/vedra-logo-1.png" alt="Vedra Logo" className="w-full h-full object-cover object-[50%_50%]" />
+                <div className="absolute top-4 sm:top-5 md:top-[27px] left-7 sm:left-9 md:left-[60px] w-14 sm:w-16 md:w-[100px] h-5 sm:h-6 md:h-[34px]">
+                  <img src="/figmaAssets/vedra-logo-1.png" alt="Vedra Logo" className="w-full h-full object-contain" />
                 </div>
 
-                <div className="absolute top-[533px] left-[568px] w-10 h-10 flex items-center justify-center bg-[#3e96ff] rounded-[56.51px] overflow-hidden">
+                <div className="absolute bottom-[20%] sm:bottom-[25%] md:top-[533px] left-1/2 sm:left-[55%] md:left-[568px] w-8 sm:w-9 md:w-10 h-8 sm:h-9 md:h-10 flex items-center justify-center bg-[#3e96ff] rounded-full overflow-hidden">
                   <img
-                    className="mt-[0.4px] h-6 ml-[-0.3px] w-[23.25px]"
+                    className="h-4 sm:h-5 md:h-6 w-auto"
                     alt="Group"
                     src="/figmaAssets/group-9.png"
                   />
                 </div>
 
-                <div className="absolute w-[calc(100%_-_471px)] h-[calc(100%_-_273px)] top-[263px] left-[494px] flex" style={{ background: "url(/figmaAssets/support.png) 50% 50% / cover" }}>
-                  <div className="mt-[259.3px] w-[41px] h-[41px] ml-[51.5px] flex items-center justify-center bg-[#0066ff] rounded-[58.57px] overflow-hidden">
+                <div className="absolute right-[5%] sm:right-[8%] md:right-auto md:w-[calc(100%_-_471px)] bottom-[10%] md:h-[calc(100%_-_273px)] md:top-[263px] md:left-[494px] w-[40%] sm:w-[35%] aspect-square md:aspect-auto flex items-end justify-start" style={{ background: "url(/figmaAssets/support.png) 50% 50% / cover" }}>
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-[41px] md:h-[41px] m-2 sm:m-3 md:mt-[259.3px] md:ml-[51.5px] flex items-center justify-center bg-[#0066ff] rounded-full overflow-hidden">
                     <img
-                      className="mt-[0.5px] h-[24.88px] ml-[-0.3px] w-[24.1px]"
+                      className="h-4 sm:h-5 md:h-[24.88px] w-auto"
                       alt="Group"
                       src="/figmaAssets/group-9-1.png"
                     />
@@ -87,13 +82,13 @@ export default function HomePage() {
                 </div>
               </div>
               
-              <div className="absolute top-[-76px] left-1/2 -translate-x-1/2 w-[2669px] h-[313px] z-[-1] rounded-[60px] blur-[26px] bg-[linear-gradient(195deg,rgba(0,0,0,1)_0%,rgba(36,72,128,1)_17%,rgba(0,27,102,1)_30%,rgba(0,0,0,1)_40%,rgba(0,0,0,1)_50%,rgba(0,0,0,1)_60%,rgba(0,27,102,1)_70%,rgba(36,72,128,1)_80%,rgba(0,0,0,1)_100%)] opacity-60" />
+              <div className="absolute top-[-30px] sm:top-[-50px] md:top-[-76px] left-1/2 -translate-x-1/2 w-full sm:w-[150%] md:w-[200%] lg:w-[2669px] h-[150px] sm:h-[200px] md:h-[313px] z-[-1] rounded-[30px] sm:rounded-[45px] md:rounded-[60px] blur-[15px] sm:blur-[20px] md:blur-[26px] bg-[linear-gradient(195deg,rgba(0,0,0,1)_0%,rgba(36,72,128,1)_17%,rgba(0,27,102,1)_30%,rgba(0,0,0,1)_40%,rgba(0,0,0,1)_50%,rgba(0,0,0,1)_60%,rgba(0,27,102,1)_70%,rgba(36,72,128,1)_80%,rgba(0,0,0,1)_100%)] opacity-60" />
             </div>
           </div>
 
-          <div className="absolute top-[191px] right-[calc(50%-533px+959px-600px)] w-12 h-12 flex items-center justify-center bg-white rounded-[67.62px] overflow-hidden border border-solid border-[#3e96ff] z-20">
+          <div className="hidden md:flex absolute top-[100px] lg:top-[191px] right-[5%] lg:right-[calc(50%-533px+959px-600px)] w-10 h-10 lg:w-12 lg:h-12 items-center justify-center bg-white rounded-full overflow-hidden border border-solid border-[#3e96ff] z-20">
             <img
-              className="mt-[-0.1px] h-[29.94px] ml-[1.0px] w-[29px]"
+              className="h-6 lg:h-[29.94px] w-auto"
               alt="Group"
               src="/figmaAssets/group-9-2.png"
             />

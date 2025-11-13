@@ -72,8 +72,8 @@ const testimonialColumns = [
 
 export const TestimonialsSection = (): JSX.Element => {
   return (
-    <section className="flex w-full items-center justify-center px-0 py-[50px]">
-      <div className="flex flex-col max-w-[1200px] w-full items-center justify-center gap-[50px] px-0 py-[50px]">
+    <section className="flex w-full items-center justify-center px-4 md:px-12 lg:px-16 py-8 md:py-12 lg:py-[50px]">
+      <div className="flex flex-col max-w-[1200px] w-full items-center justify-center gap-8 md:gap-10 lg:gap-[50px] px-0 py-8 md:py-12 lg:py-[50px]">
         <div className="self-stretch w-full flex flex-col items-start gap-2.5">
           <Badge
             variant="outline"
@@ -84,40 +84,40 @@ export const TestimonialsSection = (): JSX.Element => {
             </span>
           </Badge>
 
-          <div className="flex items-center justify-between w-full">
-            <div className="inline-flex flex-col items-start gap-2.5">
-              <h2 className="[font-family:'Instrument_Sans',Helvetica] font-semibold text-[#2c2c2c] text-[42px] tracking-[0] leading-[normal]">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full gap-4 lg:gap-8">
+            <div className="inline-flex flex-col items-start gap-2.5 w-full lg:w-auto">
+              <h2 className="[font-family:'Instrument_Sans',Helvetica] font-semibold text-[#2c2c2c] text-2xl sm:text-3xl md:text-[36px] lg:text-[42px] tracking-[0] leading-[normal]">
                 What our client
               </h2>
 
-              <div className="inline-flex h-16 items-center gap-2.5 pl-3 pr-4 py-0 bg-[#3e96ff] rounded-[40px_40px_40px_0px]">
-                <h2 className="[font-family:'Instrument_Sans',Helvetica] font-semibold text-white text-[42px] tracking-[0] leading-[normal]">
+              <div className="inline-flex h-12 sm:h-14 md:h-14 lg:h-16 items-center gap-2.5 pl-3 pr-4 py-0 bg-[#3e96ff] rounded-[40px_40px_40px_0px]">
+                <h2 className="[font-family:'Instrument_Sans',Helvetica] font-semibold text-white text-2xl sm:text-3xl md:text-[36px] lg:text-[42px] tracking-[0] leading-[normal]">
                   Says about us
                 </h2>
               </div>
             </div>
 
-            <p className="w-[518px] [font-family:'Instrument_Sans',Helvetica] font-normal text-[#2c2c2c] text-base tracking-[0] leading-[normal]">
+            <p className="w-full lg:w-[518px] [font-family:'Instrument_Sans',Helvetica] font-normal text-[#2c2c2c] text-sm sm:text-base tracking-[0] leading-[normal]">
               Effortlessly connect with customers 24/7 using an AI chatbot.{" "}
-              <br />
+              <br className="hidden sm:inline" />
               Integrate with your website, Messenger, LiveChat, or Slack to
               deliver instant, automated assistance on every platform.
             </p>
           </div>
         </div>
 
-        <div className="flex w-full items-start justify-between gap-5">
+        <div className="flex flex-col md:flex-row w-full items-start justify-between gap-5">
           {testimonialColumns.map((column, columnIndex) => (
             <div
               key={`column-${columnIndex}`}
-              className="inline-flex flex-col items-start gap-5 flex-1"
+              className={`inline-flex flex-col items-start gap-5 w-full md:flex-1 ${columnIndex === 2 ? 'hidden lg:flex' : ''}`}
             >
               {column.map((testimonial, testimonialIndex) => (
                 <Card
                   key={`testimonial-${columnIndex}-${testimonialIndex}`}
                   className="flex flex-col w-full items-start gap-5 bg-white rounded-[10px] border border-solid border-[#e6e9ee]"
                 >
-                  <CardContent className="flex flex-col w-full items-start gap-5 px-6 py-[18px]">
+                  <CardContent className="flex flex-col w-full items-start gap-5 px-5 md:px-6 py-4 md:py-[18px]">
                     <div className="flex items-center gap-3">
                       <Avatar className="w-10 h-10">
                         <AvatarImage
