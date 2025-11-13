@@ -1,10 +1,21 @@
-module.exports = {
-  content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}",
-    "./src/**/*.{html,js,ts,jsx,tsx}",
-    "app/**/*.{ts,tsx}",
-    "components/**/*.{ts,tsx}",
+import type { Config } from "tailwindcss";
+
+export default {
+  darkMode: ["class"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       fontFamily: {
         "loombot-framer-website-manrope-bold":
@@ -82,8 +93,6 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-    container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
-  darkMode: ["class"],
-};
+} satisfies Config;

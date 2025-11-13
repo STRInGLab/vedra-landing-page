@@ -107,7 +107,8 @@ export const KeyFeaturesSection = (): JSX.Element => {
                   className={`relative ${card.imageClass} z-0 bg-white ${card.imageRounded} shadow-[0px_-23.57px_53.57px_#a1a1a10d,0px_-95.36px_95.36px_#a1a1a10a,0px_-215.36px_138.21px_#a1a1a108,0px_-382.5px_153.21px_#a1a1a103]`}
                 >
                   <div
-                    className={`absolute w-full h-full top-0 left-0 ${card.imageRounded} bg-[url(${card.imageUrl})] bg-cover bg-[50%_50%]`}
+                    className={`absolute w-full h-full top-0 left-0 ${card.imageRounded} bg-cover bg-[50%_50%]`}
+                    style={{ backgroundImage: `url(${card.imageUrl})` }}
                   />
                   <div
                     className={`${card.imageRounded} ${card.id === 1 ? "border-t-[1.07px] [border-top-style:solid] border-r-[1.07px] [border-right-style:solid] border-l-[1.07px] [border-left-style:solid] border-[#dbdbdb]" : "border-[1.07px] border-solid border-[#f1f1f1]"} absolute w-full h-full top-0 left-0`}
@@ -173,7 +174,8 @@ export const KeyFeaturesSection = (): JSX.Element => {
                     className={`relative ${card.imageClass} z-0 bg-white ${card.imageRounded} shadow-[0px_-23.57px_53.57px_#a1a1a10d,0px_-95.36px_95.36px_#a1a1a10a,0px_-215.36px_138.21px_#a1a1a108,0px_-382.5px_153.21px_#a1a1a103]`}
                   >
                     <div
-                      className={`absolute w-full h-full top-0 left-0 ${card.imageRounded} bg-[url(${card.imageUrl})] bg-cover bg-[50%_50%]`}
+                      className={`absolute w-full h-full top-0 left-0 ${card.imageRounded} bg-cover bg-[50%_50%]`}
+                      style={{ backgroundImage: `url(${card.imageUrl})` }}
                     />
                     <div
                       className={`absolute w-full h-full top-0 left-0 ${card.imageRounded} border-[1.07px] border-solid border-[#f1f1f1]`}

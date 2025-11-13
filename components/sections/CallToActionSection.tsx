@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";

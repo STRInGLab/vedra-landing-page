@@ -1,13 +1,13 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { CallToActionSection } from "./sections/CallToActionSection";
-import { FAQSection } from "./sections/FAQSection";
-import { FooterSection } from "./sections/FooterSection";
-import { InterviewProcessSection } from "./sections/InterviewProcessSection";
-import { InterviewWorkflowSection } from "./sections/InterviewWorkflowSection";
-import { KeyFeaturesSection } from "./sections/KeyFeaturesSection";
-import { MainContentSection } from "./sections/MainContentSection";
-import { TestimonialsSection } from "./sections/TestimonialsSection";
+import { CallToActionSection } from "@/components/sections/CallToActionSection";
+import { FAQSection } from "@/components/sections/FAQSection";
+import { FooterSection } from "@/components/sections/FooterSection";
+import { InterviewProcessSection } from "@/components/sections/InterviewProcessSection";
+import { InterviewWorkflowSection } from "@/components/sections/InterviewWorkflowSection";
+import { KeyFeaturesSection } from "@/components/sections/KeyFeaturesSection";
+import { MainContentSection } from "@/components/sections/MainContentSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
 const navItems = [
   { label: "Home" },
@@ -17,11 +17,13 @@ const navItems = [
   { label: "Pricing" },
 ];
 
-export const Landing = (): JSX.Element => {
+export default function HomePage() {
   return (
     <div className="bg-white w-full relative">
       <header className="w-full h-20 flex items-center justify-between px-[360px] py-0 bg-transparent backdrop-blur-md shadow-[0px_0.4px_16.17px_#00000014,0px_0.61px_10.11px_#2c2c2c0f,0px_4.04px_4.04px_#2c2c2c03] fixed top-0 left-0 right-0 z-50">
-        <div className="relative w-[115.0px] h-[38.84px] bg-[url(/figmaAssets/vedra-logo-white-1-1.png)] bg-cover bg-[50%_50%]" />
+        <div className="relative w-[115.0px] h-[38.84px]">
+          <img src="/figmaAssets/vedra-logo-white-1-1.png" alt="Vedra Logo" className="w-full h-full object-cover object-[50%_50%]" />
+        </div>
 
         <nav className="flex w-[542px] h-[46px] items-center justify-between relative">
           {navItems.map((item, index) => (
@@ -62,7 +64,9 @@ export const Landing = (): JSX.Element => {
               <div className="relative h-full overflow-hidden rounded-3xl shadow-2xl bg-white">
                 <div className="absolute top-6 left-[54px] w-[115px] h-10 bg-white" />
 
-                <div className="absolute top-[27px] left-[60px] w-[100px] h-[34px] bg-[url(/figmaAssets/vedra-logo-1.png)] bg-cover bg-[50%_50%]" />
+                <div className="absolute top-[27px] left-[60px] w-[100px] h-[34px]">
+                  <img src="/figmaAssets/vedra-logo-1.png" alt="Vedra Logo" className="w-full h-full object-cover object-[50%_50%]" />
+                </div>
 
                 <div className="absolute top-[533px] left-[568px] w-10 h-10 flex items-center justify-center bg-[#3e96ff] rounded-[56.51px] overflow-hidden">
                   <img
@@ -72,7 +76,7 @@ export const Landing = (): JSX.Element => {
                   />
                 </div>
 
-                <div className="absolute w-[calc(100%_-_471px)] h-[calc(100%_-_273px)] top-[263px] left-[494px] flex [background:url(..//figmaAssets/support.png)_50%_50%_/_cover]">
+                <div className="absolute w-[calc(100%_-_471px)] h-[calc(100%_-_273px)] top-[263px] left-[494px] flex" style={{ background: "url(/figmaAssets/support.png) 50% 50% / cover" }}>
                   <div className="mt-[259.3px] w-[41px] h-[41px] ml-[51.5px] flex items-center justify-center bg-[#0066ff] rounded-[58.57px] overflow-hidden">
                     <img
                       className="mt-[0.5px] h-[24.88px] ml-[-0.3px] w-[24.1px]"
@@ -127,4 +131,4 @@ export const Landing = (): JSX.Element => {
       </main>
     </div>
   );
-};
+}

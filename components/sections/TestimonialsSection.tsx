@@ -10,19 +10,19 @@ import { Card, CardContent } from "@/components/ui/card";
 const testimonialColumns = [
   [
     {
-      avatar: "..//figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png.png",
+      avatar: "/figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png.png",
       name: "Smutchings",
       handle: "@Smutchings",
       text: '"The AI assistant has revolutionized our customer service! It provides quick, accurate responses that enhance user satisfaction. Our interactions with customers have improved significantly, making their experience seamless and enjoyable. There\'s no going back to the old methods!"',
     },
     {
-      avatar: "..//figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-1.png",
+      avatar: "/figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-1.png",
       name: "Jordan Kicklighter",
       handle: "@jwkicklighter",
       text: "\"This chatbot has truly transformed our operations! Its speed and accuracy have significantly improved our customer interactions, making them smoother and more efficient. We've noticed a remarkable increase in customer satisfaction since implementing it. The ease of use and the seamless integration into our existing systems have made it an invaluable tool for our team. We can now handle inquiries faster and more effectively.",
     },
     {
-      avatar: "..//figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-2.png",
+      avatar: "/figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-2.png",
       name: "Mac Pankiewicz",
       handle: "@macpankiewiczs",
       text: '"We\'ve experienced remarkable improvements in customer interactions—immediate responses, precise answers, and effortless integration!"',
@@ -30,19 +30,19 @@ const testimonialColumns = [
   ],
   [
     {
-      avatar: "..//figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-3.png",
+      avatar: "/figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-3.png",
       name: "Matthew",
       handle: "@matthewmorek",
       text: '"This chatbot is incredibly efficient, making our support system faster and more reliable than ever!"',
     },
     {
-      avatar: "..//figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-4.png",
+      avatar: "/figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-4.png",
       name: "Jordan Kicklighter",
       handle: "@jwkicklighter",
       text: '"Our AI assistant has revolutionized our customer service! It delivers quick responses and facilitates seamless communication, making it easier for us to assist our clients. The efficiency and effectiveness of our support have significantly improved, leading to higher customer satisfaction. We can now handle inquiries faster than ever, ensuring that our customers feel valued and heard. This technology has truly been a game-changer for our team, allowing us to focus on building relationships while the AI takes care of routine queries. We couldn\'t be happier with the results!"',
     },
     {
-      avatar: "..//figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-5.png",
+      avatar: "/figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-5.png",
       name: "Mac Pankiewicz",
       handle: "@macpankiewicz",
       text: '"Our customer engagement has soared! We\'re excited about the quick responses, precise information, and smooth integration that have revolutionized our interactions. This has significantly enhanced our service quality, making a noticeable impact on our customer satisfaction!"',
@@ -50,19 +50,19 @@ const testimonialColumns = [
   ],
   [
     {
-      avatar: "..//figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-6.png",
+      avatar: "/figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-6.png",
       name: "Nick Heer",
       handle: "@nickheer",
       text: '"The AI chatbot has revolutionized our workflow, ensuring seamless communication and timely responses that keep our customers happy!"',
     },
     {
-      avatar: "..//figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-7.png",
+      avatar: "/figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-7.png",
       name: "Blake",
       handle: "@blake_cricht0n",
       text: "\"This chatbot has revolutionized our business operations! Its speed and accuracy have transformed how we communicate with customers, making interactions smoother than ever. We've seen a significant improvement in customer satisfaction since implementing it. The ease of use and reliability of this tool have made it an invaluable asset to our team. I can't recommend it enough for anyone looking to enhance their customer service experience!\"",
     },
     {
-      avatar: "..//figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-8.png",
+      avatar: "/figmaAssets/ltcxorvzofu5530nmxtia8cqvwg-png-8.png",
       name: "Smutchings",
       handle: "@Smutchings",
       text: '"The chatbot has become an essential part of our operations, delivering quick and effective support that enhances customer satisfaction!"',
