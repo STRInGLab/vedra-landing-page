@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { useState } from "react";
 
 const pricingPlans = [
   {
@@ -107,9 +107,9 @@ export const CallToActionSection = (): JSX.Element => {
                     </span>
                   </Badge>
 
-                  <p className="[font-family:'Instrument_Sans',Helvetica] font-semibold text-white text-lg sm:text-xl md:text-xl lg:text-2xl tracking-[0] leading-[normal]">
-                    {plan.description}
-                  </p>
+                  <p className="[font-family:'Instrument_Sans',Helvetica] font-semibold text-white text-lg sm:text-xl md:text-xl lg:text-2xl tracking-[0] leading-[normal] text-right">
+  {plan.description}
+</p>
                 </div>
               </CardContent>
             </Card>

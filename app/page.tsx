@@ -1,5 +1,3 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
 import { MobileNav } from "@/components/navigation/MobileNav";
 import { CallToActionSection } from "@/components/sections/CallToActionSection";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -9,6 +7,7 @@ import { InterviewWorkflowSection } from "@/components/sections/InterviewWorkflo
 import { KeyFeaturesSection } from "@/components/sections/KeyFeaturesSection";
 import { MainContentSection } from "@/components/sections/MainContentSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
+import { Button } from "@/components/ui/button";
 
 const navItems = [
   { label: "Home" },
@@ -20,8 +19,8 @@ const navItems = [
 
 export default function HomePage() {
   return (
-    <div className="bg-white w-full relative">
-      <header className="w-full h-16 md:h-20 flex items-center justify-between px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-60 py-0 bg-transparent backdrop-blur-md shadow-[0px_0.4px_16.17px_#00000014,0px_0.61px_10.11px_#2c2c2c0f,0px_4.04px_4.04px_#2c2c2c03] fixed top-0 left-0 right-0 z-50">
+    <div className="bg-white w-full min-h-screen relative overflow-x-hidden flex flex-col">
+      <header className="absolute top-0 left-0 right-0 z-50 w-full h-16 md:h-20 flex items-center justify-between px-6 md:px-12 py-0 bg-transparent backdrop-blur-md shadow-[0px_0.4px_16.17px_#00000014,0px_0.61px_10.11px_#2c2c2c0f,0px_4.04px_4.04px_#2c2c2c03]">
         <div className="relative w-24 md:w-[115px] h-8 md:h-[38.84px]">
           <img src="/figmaAssets/vedra-logo-white-1-1.png" alt="Vedra Logo" className="w-full h-full object-contain" />
         </div>
@@ -52,7 +51,6 @@ export default function HomePage() {
         <section className="relative w-full">
           <MainContentSection />
         </section>
-
         <section className="relative w-full bg-white pt-[150px] sm:pt-[250px] md:pt-[350px] lg:pt-[400px] pb-12 sm:pb-16 md:pb-20 px-4">
           <div className="absolute top-[-100px] sm:top-[-200px] md:top-[-300px] lg:top-[-400px] left-1/2 -translate-x-1/2 z-10 w-[95%] sm:w-[90%] md:w-[85%] lg:w-[1066px] max-w-full">
             <div className="relative w-full aspect-[4/3] sm:aspect-[16/12] md:aspect-[1066/795]">
@@ -71,8 +69,9 @@ export default function HomePage() {
                   />
                 </div>
 
-                <div className="absolute right-[5%] sm:right-[8%] md:right-auto md:w-[calc(100%_-_471px)] bottom-[10%] md:h-[calc(100%_-_273px)] md:top-[263px] md:left-[494px] w-[40%] sm:w-[35%] aspect-square md:aspect-auto flex items-end justify-start" style={{ background: "url(/figmaAssets/support.png) 50% 50% / cover" }}>
-                  <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-[41px] md:h-[41px] m-2 sm:m-3 md:mt-[259.3px] md:ml-[51.5px] flex items-center justify-center bg-[#0066ff] rounded-full overflow-hidden">
+                <div className="absolute bottom-0 right-0 w-[40%] sm:w-[35%] md:w-[45%] h-[40%] sm:h-[45%] md:h-[55%] flex items-end justify-start" 
+                  style={{ background: "url(/figmaAssets/support.png) bottom right / contain no-repeat" }}>
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-[41px] md:h-[41px] m-3 md:m-6 flex items-center justify-center bg-[#0066ff] rounded-full overflow-hidden shadow-md">
                     <img
                       className="h-4 sm:h-5 md:h-[24.88px] w-auto"
                       alt="Group"
@@ -82,7 +81,7 @@ export default function HomePage() {
                 </div>
               </div>
               
-              <div className="absolute top-[-30px] sm:top-[-50px] md:top-[-76px] left-1/2 -translate-x-1/2 w-full sm:w-[150%] md:w-[200%] lg:w-[2669px] h-[150px] sm:h-[200px] md:h-[313px] z-[-1] rounded-[30px] sm:rounded-[45px] md:rounded-[60px] blur-[15px] sm:blur-[20px] md:blur-[26px] bg-[linear-gradient(195deg,rgba(0,0,0,1)_0%,rgba(36,72,128,1)_17%,rgba(0,27,102,1)_30%,rgba(0,0,0,1)_40%,rgba(0,0,0,1)_50%,rgba(0,0,0,1)_60%,rgba(0,27,102,1)_70%,rgba(36,72,128,1)_80%,rgba(0,0,0,1)_100%)] opacity-60" />
+              <div className="absolute top-[-30px] sm:top-[-50px] md:top-[-76px] left-1/2 -translate-x-1/2 w-full max-w-full h-[150px] sm:h-[200px] md:h-[313px] z-[-1] rounded-[30px] sm:rounded-[45px] md:rounded-[60px] blur-[15px] sm:blur-[20px] md:blur-[26px] bg-[linear-gradient(195deg,rgba(0,0,0,1)_0%,rgba(36,72,128,1)_17%,rgba(0,27,102,1)_30%,rgba(0,0,0,1)_40%,rgba(0,0,0,1)_50%,rgba(0,0,0,1)_60%,rgba(0,27,102,1)_70%,rgba(36,72,128,1)_80%,rgba(0,0,0,1)_100%)] opacity-60" />
             </div>
           </div>
 
