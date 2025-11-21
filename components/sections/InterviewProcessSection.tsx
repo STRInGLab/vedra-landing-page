@@ -1,4 +1,3 @@
-import React from "react";
 import { Badge } from "@/components/ui/badge";
 
 const useCasesList = [
@@ -79,18 +78,18 @@ export const InterviewProcessSection = (): JSX.Element => {
             </ul>
           </div>
 
-          <img
-            className="w-full h-64 sm:h-80 md:h-96 lg:h-[550px] object-cover rounded-lg"
-            alt="Connect Seamlessly Across All Platforms"
-            src="/figmaAssets/image-2.png"
+          <img 
+            className="w-full h-auto object-contain rounded-lg" 
+            alt="Connect Seamlessly Across All Platforms" 
+            src="/figmaAssets/image-2.png" 
           />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8 lg:gap-[80px] items-start">
-          <img
-            className="w-full h-64 sm:h-80 md:h-96 lg:h-[567px] object-cover rounded-lg md:order-first"
-            alt="AI-Driven Solutions for Every Need"
-            src="/figmaAssets/image-2-1.png"
+          <img 
+            className="w-full h-auto object-contain rounded-lg md:order-first" 
+            alt="AI-Driven Solutions for Every Need" 
+            src="/figmaAssets/image-2-1.png" 
           />
 
           <div className="flex flex-col gap-5 md:gap-6 lg:gap-[30px]">

@@ -69,11 +69,18 @@ export default function HomePage() {
                   />
                 </div>
 
-                <div className="absolute bottom-0 right-0 w-[40%] sm:w-[35%] md:w-[45%] h-[40%] sm:h-[45%] md:h-[55%] flex items-end justify-start" 
-                  style={{ background: "url(/figmaAssets/support.png) bottom right / contain no-repeat" }}>
-                  <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-[41px] md:h-[41px] m-3 md:m-6 flex items-center justify-center bg-[#0066ff] rounded-full overflow-hidden shadow-md">
+                <div 
+                  className="absolute bottom-0 right-0 w-[50%] sm:w-[45%] md:w-[60%] h-[50%] sm:h-[50%] md:h-[65%] flex items-end justify-start z-10" 
+                  style={{ 
+                    backgroundImage: "url(/figmaAssets/support.png)", 
+                    backgroundPosition: "bottom right", 
+                    backgroundSize: "contain", 
+                    backgroundRepeat: "no-repeat" 
+                  }}
+                >
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-[52px] md:h-[52px] m-2 sm:m-4 md:m-8 flex items-center justify-center bg-[#0066ff] rounded-full overflow-hidden shadow-md">
                     <img
-                      className="h-4 sm:h-5 md:h-[24.88px] w-auto"
+                      className="h-4 sm:h-5 md:h-[30px] w-auto"
                       alt="Group"
                       src="/figmaAssets/group-9-1.png"
                     />

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Accordion,
   AccordionContent,
@@ -92,7 +91,7 @@ export const FAQSection = (): JSX.Element => {
             </Button>
           </div>
 
-          <div className="flex flex-col w-full md:w-[750px] items-start gap-5 md:flex-shrink-0">
+          <div className="flex flex-col w-full md:max-w-[750px] items-start gap-5">
             <Accordion
               type="single"
               collapsible

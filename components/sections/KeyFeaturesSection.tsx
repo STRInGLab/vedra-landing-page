@@ -1,4 +1,3 @@
-import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -103,15 +102,18 @@ export const KeyFeaturesSection = (): JSX.Element => {
                   </p>
                 </CardContent>
 
-                <div
-                  className="relative w-full h-48 sm:h-64 md:h-auto md:w-[503.57px] md:h-[364.29px] z-0 bg-white rounded-t-xl md:rounded-[12.86px_12.86px_0px_0px] shadow-[0px_-23.57px_53.57px_#a1a1a10d,0px_-95.36px_95.36px_#a1a1a10a,0px_-215.36px_138.21px_#a1a1a108,0px_-382.5px_153.21px_#a1a1a103]"
-                >
+                <div className="relative w-full h-auto z-0 bg-white rounded-t-xl md:rounded-[12.86px_12.86px_0px_0px] shadow-[0px_-23.57px_53.57px_#a1a1a10d,0px_-95.36px_95.36px_#a1a1a10a,0px_-215.36px_138.21px_#a1a1a108,0px_-382.5px_153.21px_#a1a1a103]">
                   <div
-                    className="absolute w-full h-full top-0 left-0 rounded-t-xl md:rounded-[12.86px_12.86px_0px_0px] bg-cover bg-[50%_50%]"
-                    style={{ backgroundImage: `url(${card.imageUrl})` }}
+                    className={`rounded-t-xl md:${card.imageRounded} ${
+                      card.id === 1
+                        ? "border-t-[1.07px] border-r-[1.07px] border-l-[1.07px] border-solid border-[#dbdbdb]"
+                        : "border-[1.07px] border-solid border-[#f1f1f1]"
+                    } absolute w-full h-full top-0 left-0 pointer-events-none z-10`}
                   />
-                  <div
-                    className={`rounded-t-xl md:${card.imageRounded} ${card.id === 1 ? "border-t-[1.07px] [border-top-style:solid] border-r-[1.07px] [border-right-style:solid] border-l-[1.07px] [border-left-style:solid] border-[#dbdbdb]" : "border-[1.07px] border-solid border-[#f1f1f1]"} absolute w-full h-full top-0 left-0`}
+                  <img
+                    src={card.imageUrl}
+                    alt={card.title}
+                    className={`w-full h-auto object-contain object-bottom rounded-t-xl md:${card.imageRounded}`}
                   />
                 </div>
               </Card>
